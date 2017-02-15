@@ -10,3 +10,9 @@ nameEl.innerText = `${data.results[0].name.title} ${data.results[0].name.first} 
 
 const emailEl = document.querySelector('.user-card__info-email');
 emailEl.innerText = `${data.results[0].email}`;
+
+const mobileEl = document.querySelector('.user-card__info-mobile');
+mobileEl.innerText = `${data.results[0].cell}`;
+
+const locationEl = document.querySelector('.user-card__info-location');
+locationEl.innerText = `${data.results[0].location.city}, ${data.results[0].location.state}`;
